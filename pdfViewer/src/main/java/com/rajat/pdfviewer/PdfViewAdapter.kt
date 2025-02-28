@@ -267,7 +267,7 @@ import java.util.*
 //}
 
 
-internal class PdfViewAdapter(
+class PdfViewAdapter(
     private val context: Context,
     private val renderer: PdfRendererCore,
     private val pageSpacing: Rect,

@@ -26,7 +26,7 @@
      * Created by Rajat on 11,July,2020
      */
 
-    internal class PdfRendererCore(
+    class PdfRendererCore(
         private val context: Context,
         fileDescriptor: ParcelFileDescriptor
     ) {

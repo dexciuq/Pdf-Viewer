@@ -65,6 +65,15 @@ class PinchZoomRecyclerView : RecyclerView {
 
     override fun onTouchEvent(ev: MotionEvent): Boolean {
         val superHandled = super.onTouchEvent(ev)
+
+        // Pass touch events to child views when zoomed in
+        if (mScaleFactor > 1f) {
+            val child = findChildViewUnder(ev.x, ev.y)
+            if (child != null) {
+                return false // Let the child handle the event
+            }
+        }
+
         mGestureDetector?.onTouchEvent(ev)
         mScaleDetector?.onTouchEvent(ev)
         when (ev.action and MotionEvent.ACTION_MASK) {
