@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    namespace = "com.dexciuq.pdfviewer"
+    namespace = "com.rajat.pdfviewer"
     compileSdk = 34
 
     defaultConfig {
