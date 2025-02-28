@@ -90,8 +90,8 @@ mavenPublishing {
         )
     )
 
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
-    signAllPublications()
+//    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+//    signAllPublications()
 
     coordinates("io.github.dexciuq", "pdfviewer", "2.1.1-fork")
 
