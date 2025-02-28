@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    namespace = "com.rajat.pdfviewer"
+    namespace = "com.dexciuq.pdfviewer"
     compileSdk = 34
 
     defaultConfig {
@@ -93,12 +93,12 @@ mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
     signAllPublications()
 
-    coordinates("io.github.afreakyelf", "Pdf-Viewer", "2.1.1")
+    coordinates("io.github.dexciuq", "pdfviewer", "2.1.1-fork")
 
     pom {
         name.set("PDF Viewer")
-        description.set("A PDF viewing library for Android")
-        url.set("https://github.com/afreakyelf/pdfviewer")
+        description.set("A fork of the PDF viewing library for Android with custom changes")
+        url.set("https://github.com/dexciuq/Pdf-Viewer")
         licenses {
             license {
                 name.set("MIT License")
@@ -107,15 +107,15 @@ mavenPublishing {
         }
         developers {
             developer {
-                id.set("afreakyelf")
-                name.set("Rajat Mittal")
-                email.set("rjmittal07@gmail.com")
+                id.set("dexciuq")
+                name.set("Dinmukhammed Zhasulanov")
+                email.set("dimokzhasulanov@gmail.com")
             }
         }
         scm {
-            connection.set("scm:git:git://github.com/afreakyelf/pdfviewer.git")
-            developerConnection.set("scm:git:ssh://github.com/afreakyelf/pdfviewer.git")
-            url.set("https://github.com/afreakyelf/pdfviewer")
+            connection.set("scm:git:git://github.com/dexciuq/Pdf-Viewer.git")
+            developerConnection.set("scm:git:ssh://github.com/dexciuq/Pdf-Viewer.git")
+            url.set("https://github.com/dexciuq/Pdf-Viewer")
         }
     }
 
